@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.Pane?>
+
+<!--<?import javafx.geometry.Insets?>
+        <?import javafx.scene.layout.GridPane?>
+
+        <?import javafx.scene.control.Button?>
+        <?import javafx.scene.control.Label?>
+        <GridPane fx:controller="sample.Controller"
+                  xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+        </GridPane>-->
+
+<Pane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <Pane id="menuPane" prefHeight="400.0" prefWidth="209.0">
+            <children>
+                <Pane id="radiButtonsPane" layoutX="-3.0" prefHeight="186.0" prefWidth="216.0">
+                    <children>
+                        <RadioButton fx:id="selMovRadBtn" layoutX="33.0" layoutY="22.0" mnemonicParsing="false" text="Select / Move" />
+                        <RadioButton fx:id="ellipseRadBtn" layoutX="33.0" layoutY="48.0" mnemonicParsing="false" text="Ellipse" />
+                        <RadioButton fx:id="rectRadBtn" layoutX="33.0" layoutY="76.0" mnemonicParsing="false" text="Rectangle" />
+                        <RadioButton fx:id="lineRadBtn" layoutX="34.0" layoutY="103.0" mnemonicParsing="false" text="Line" />
+                    </children></Pane>
+                <Pane id="comboBoxPane" layoutY="185.0" prefHeight="51.0" prefWidth="209.0">
+               <children>
+                  <ColorPicker fx:id="colorPicker" layoutX="35.0" layoutY="13.0" />
+               </children>
+                </Pane>
+                <Pane id="buttonsPane" layoutX="-1.0" layoutY="236.0" prefHeight="162.0" prefWidth="209.0">
+                    <children>
+                        <Button fx:id="deleteButton" layoutX="79.0" layoutY="44.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="cloneButton" layoutX="78.0" layoutY="81.0" mnemonicParsing="false" text="Clone" />
+                    </children>
+                </Pane>
+            </children>
+        </Pane>
+        <Pane fx:id="canvasPane" id="canvasPane" layoutX="209.0" prefHeight="400.0" prefWidth="392.0">
+            <children>
+                <Canvas fx:id="canvas" height="393.0" layoutY="-1.0" width="392.0" />
+            </children>
+        </Pane>
+    </children>
+</Pane>
